@@ -24,3 +24,7 @@ variable "public_key" {
 variable "zone_id" {
     type = string
 }
+
+variable "my_public_ip" {
+    type = string
+}

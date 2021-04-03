@@ -36,7 +36,7 @@ resource "aws_security_group" "blog_security_group" {
         from_port   = 22
         to_port     = 22
         protocol    = "tcp"
-        cidr_blocks = ["82.16.77.36/32"]
+        cidr_blocks = ["${var.my_public_ip}/32"]
     }
 
     egress {
